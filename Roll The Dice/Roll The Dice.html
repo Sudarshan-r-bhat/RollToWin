@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width scale=1.0">
+        <title>Roll the dice</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header><h2>Roll The Dice</h2></header>
+        <section>
+            <div class="playground">
+
+                <div class="col span-1-of-2 first-col">
+                    <h2 class="player-1">Player 1</h2>
+                    <div class="scoreBoard js-player1-score">0</div>
+                    <div class="temp-score js-player1-temp-score">0</div>
+                    <div class="js-player1-winner">first to 25 points wins</div>
+                </div>
+
+                <div class="col span-1-of-2 second-col">
+                    <h2 class="player-2">Player 2</h2>
+                    <div class="scoreBoard js-player2-score">0</div>
+                    <div class="temp-score js-player2-temp-score">0</div>
+                    <div class="js-player2-winner">first to 25 points wins</div>
+                </div>
+
+                <div class="die-display">
+                    <div class="display-box">
+                        <h1 id="js-die-number">1</h1>
+                    </div>
+                </div>
+
+                <div class="js-components">
+                    <div class="roll-die">
+                        <button onclick="roll()">roll</button>
+                    </div>
+                    <div class="change-player">
+                        <button onclick="changePlayer()">change player</button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+    </body>
+    <script src="app.js"></script>
+</html>
